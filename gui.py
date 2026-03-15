@@ -19,7 +19,7 @@ def click_button(index):
 
         if winner:
             if winner == "Draw":
-                messagebox.showinfo("Game Over", "It's a draw!")
+              messagebox.showinfo("Game Over", "No one wins! It's a draw!")
             else:
                 messagebox.showinfo("Game Over", f"Player {winner} wins!")
             reset_game()
@@ -55,6 +55,8 @@ for i in range(9):
 # Restart button
 reset = tk.Button(root, text="Restart Game", command=reset_game, bg="orange", fg="white", font=("Arial", 14))
 reset.grid(row=4, column=0, columnspan=3, sticky="we", pady=10)
+
+
 
 # Start game
 update_turn_label()

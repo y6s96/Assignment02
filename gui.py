@@ -1,3 +1,5 @@
+# GUI improvement commit for branch merge
+
 import tkinter as tk
 from tkinter import messagebox
 from game_logic import TicTacToe
